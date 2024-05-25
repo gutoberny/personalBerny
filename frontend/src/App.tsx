@@ -1,27 +1,22 @@
 import React from "react";
+
 import { ThemeProvider } from "./components/theme-provider";
-import { ModeToggle } from "./components/mode-toggle";
-import { LanguageToggle } from "./components/language-toggle";
+
+import Header from "./components/header";
+
+import Introduction from "./components/introduction";
+
 import "./i18n"; // Import the i18n configuration
-import { useTranslation } from "react-i18next";
 
 function App() {
-  const { t } = useTranslation();
-
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <div className="h-screen">
-        <div className="flex justify-end p-4 space-x-4">
-          <LanguageToggle />
+      <div className="h-screen flex flex-col bg-background text-foreground">
+        <Header />
 
-          <ModeToggle />
-        </div>
-
-        <div
-          className={`bg-background text-foreground h-full flex items-center justify-center`}
-        >
-          <h1>{t("Welcome")}</h1>
-        </div>
+        <main className="flex-grow flex items-center justify-center">
+          <Introduction />
+        </main>
       </div>
     </ThemeProvider>
   );

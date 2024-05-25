@@ -7,6 +7,11 @@ const resources = {
     translation: {
       Welcome: "Welcome",
       "Toggle theme": "Toggle theme",
+      myPortfolio: "My portfolio",
+      myName: "Gustavo Berny",
+      myRole: "Software Developer",
+      myLocation: "Brasil",
+      myYearOld: "30 years old",
     },
   },
 
@@ -14,6 +19,11 @@ const resources = {
     translation: {
       Welcome: "Bem-vindo",
       "Toggle theme": "Alternar tema",
+      myPortfolio: "Meu portifolio",
+      myName: "Gustavo Berny",
+      myRole: "Desenvolvedor de software",
+      myLocation: "Brasil",
+      myYearOld: "30 anos",
     },
   },
 };
